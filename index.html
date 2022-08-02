@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Esercitazione Threejs</title>
+</head>
+
+<body>
+    <canvas id="three-canvas"></canvas>
+    <div class="ifc-property-menu">
+        <div class="ifc-property-item">
+            <div>Key</div>
+            <div class="ifc-property-value">Value</div>
+        </div>
+        <div id="ifc-property-menu-root"></div>
+    </div>
+
+    <div id="viewer-container"></div>
+    <div id="progressBar-container">
+        <div id="progress__fill"></div>
+        <span id="progress__text">0%</span>
+        <div class="circle">
+            <div class="rectangle" id="r_left"></div>
+            <div class="rectangle" id="r_right"></div>
+        </div>
+
+    </div>
+
+    <div class="table-container">
+        <table id="bim-table">
+            <tr>
+                <td colspan="2">Project Properties</td>
+            </tr>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <input type="file" id="file-input" />
+    <script src="bundle.js"></script>
+</body>
+
+</html>

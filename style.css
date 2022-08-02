@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#three-canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+#file-input {
+    position: absolute;
+}
+
+#viewer-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+
+.checkboxes {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.ifc-property-menu {
+    border: 0.05px solid rgba(89, 87, 84, 0.83);
+    width: 25rem;
+    right: 1rem;
+    top: 1rem;
+    position: absolute;
+    background-color: rgba(235, 247, 233, 0.179);
+    overflow-y: scroll;
+    height: auto;
+    max-height: 35rem;
+}
+
+#progressBar-container {
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    background: #fae8c0;
+    border-radius: 5px;
+    margin: 2rem;
+    display: flex;
+}
+
+#progress__fill {
+    position: absolute;
+    height: 100%;
+    border-radius: 5px;
+    background: #ee6b38;
+}
+
+#viewer-container {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 1rem;
+    top: 5rem;
+}
+
+.table-container {
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    max-height: 100vh;
+    background-color: white;
+    overflow: scroll;
+    width: 50vh;
+}
+
+#bim-table td,
+#bim-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#bim-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#bim-table tr:hover {
+    background-color: #ddd;
+}
+
+#bim-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+#progress__text {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font: bold 15px "Quicksand", sans-serif;
+    color: gray;
+}
+
+#progressBar-container *:first-child {
+    margin-right: 0.5rem;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+    left: -1.7rem;
+    background-color: #ee6b38;
+    border-radius: 50%;
+    display: flex;
+}
+
+.rectangle {
+    position: relative;
+    height: 17px;
+    width: 2px;
+    background-color: #ffffff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#r_left.rectangle {
+    left: 0.9rem;
+}
+
+#r_right.rectangle {
+    left: -1px;
+}
+
+.ifc-property-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0.5rem;
+    border-bottom: solid 0.2px gray;
+}
+
+.ifc-property-value {
+    width: 100%;
+    text-align: right;
+}
